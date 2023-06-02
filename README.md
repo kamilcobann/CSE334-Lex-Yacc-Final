@@ -1,5 +1,5 @@
 # CSE334-Lex-Yacc-Final
-# CSE334-Lex-Yacc
+# SLAN LANGUAGE
 This project is created by : Kamil Çoban and Esra Tontu
 
 
