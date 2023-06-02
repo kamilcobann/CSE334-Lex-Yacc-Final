@@ -1,0 +1,9 @@
+a = 3
+b = 6
+PRINT(a)
+PRINT(b)                COMMENT a 3`e esit b ise 6`ya bu yuzden 3<6 yanlistir COMMENT
+IF(a > b) {
+    PRINT("A is greater than B")
+}ELSE{
+    PRINT("B is greater than A")
+}

@@ -1,0 +1,15 @@
+FUNCTION a(){
+	PRINT(3+3)
+	PRINT("3+3")
+}
+COMMENT a fonksiyonu tanimlandi COMMENT
+
+FUNCTION b(){
+	a()		
+	PRINT(2-3)
+	PRINT("2-3")	
+}
+COMMENT b fonksiyonu tanimlandi COMMENT
+
+b()  COMMENT b fonksiyonu cagirildi COMMENT
+
