@@ -3,6 +3,9 @@
 This project is created by : Kamil Çoban and Esra Tontu
 
 
+
+
+
 \<digit\> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
 \<letter\> ::= 'a' | 'b' | ... | 'z' | 'A' | 'B' | ... | 'Z'
@@ -45,16 +48,6 @@ This project is created by : Kamil Çoban and Esra Tontu
 
 \<divide\> ::= \<expression\> '/' \<expression\>
 
-\<mod\> ::= \<expression\> '%' \<expression\>
-
-\<assign\> ::= \<identifier\> '=' \<expression\> ';'
-
-\<plus\_equal\>::= \<identifier\> '+=' \<expression\>
-
-\<minus\_equal\>::= \<identifier\> '-=' \<expression\>
-
-\<divide\_equal\>::= \<identifier\> '/=' \<expression\>
-
 \<question\_equal\>::= \<identifier\> '?=' \<expression\>
 
 \<not\_equal\>::= \<identifier\> '!=' \<expression\>
@@ -81,12 +74,6 @@ BREAK : break
 
 \<print\>::='print' \<var\>
 
-\<inc\> ::= \<expression\> '++' \<expression\>
-
-\<dec\> ::= \<expression\> '--' \<expression\>
-
-\<xor\> ::= \<expression\> ' ' ' \<expression\>
-
 \<string\> ::= '"' \<character\>\* '"' | \<identifier\>
 
 \<or\> ::= \<expression\> ' |' \<expression\>
@@ -103,18 +90,20 @@ BREAK : break
 
 \<var\> ::= \<type\> \<identifier\> ";"
 
-\<identifier\> ::= \<letter\> | "\_" | \<identifier\> \<letter\_or\_digit\> | \<identifier\> "\_"
-
-\<let\> ::= "let" \<identifier\> "=" \<expression\> ";"
-
-\<identifier\> ::= \<letter\> | "\_" | \<identifier\> \<letter\_or\_digit\> | \<identifier\> "\_"
-
-\<const\> ::= "const" \<type\> \<identifier\> "=" \<expression\> ";"
-
-\<identifier\> ::= \<letter\> | "\_" | \<identifier\> \<letter\_or\_digit\> | \<identifier\> "\_"
-
-\<letter\_or\_digit\> ::= \<letter\> | \<digit\>
-
 
 
 slan is designed for a beginner software developers. 
+
+
+Makefile
+
+Manuel: 
+lex slan.l
+Yacc -d slan.y
+gcc -g lex.yy.c y.tab.c -o slanscan
+
+Otomatic
+Make plan
+
+Clean 
+Make clean
